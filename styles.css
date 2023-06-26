@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    width: 586px;
+    margin: 120px auto;
+    font-size: 0;
+}
+
+.first-half {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.first-half img {
+    width: 280px;
+    height: 406px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.second-half {
+    display: inline-block;
+    width: 300px;
+    background-color: white;
+    padding: 32px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.second-half h6 {
+    text-transform: uppercase;
+    color: grey;
+    letter-spacing: 4px;
+    font-weight: normal;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.special {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
+}
+
+.description {
+    opacity: 0.6;
+    width: 225px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.current-price {
+    color: hsl(158, 36%, 37%);
+    font-weight: 800;
+    font-size: 38px;
+    padding-right: 10px;
+}
+
+.price {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.original-price {
+    position: relative;
+    bottom: 9px;
+    font-size: 15px;
+    text-decoration: line-through;
+    color: #948d8d;
+}
+
+#btn {
+    border: none;
+    border-radius: 12px;
+    width: 225px;
+    padding: 13px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+}
+
+#btn img {
+    padding-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: hsl(158deg 29.76% 28.31%);
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 50px auto;
+        text-align: center;
+    }
+    .first-half {
+        display: block;
+    }
+    .first-half img {
+        content: url('./images/image-product-mobile.jpg');
+        width: 429px;
+        height: 300px;
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .second-half {
+        margin: auto;
+        display: block;
+        width: 429px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .description {
+        width: 374px;
+        font-size: 17px;
+        text-align: left;
+    }
+    .second-half h6 {
+        font-size: 17px;
+        text-align: left;
+    }
+    .special, .price {
+        text-align: left;
+    }
+    .price {
+        position: relative;
+        right: 90px;
+    }
+    #btn {
+        width: 368px;
+        font-size: 20px;
+    }
+}
+
